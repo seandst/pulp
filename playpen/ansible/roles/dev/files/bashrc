@@ -60,5 +60,9 @@ psmash() {
     deactivate;
 }
 
+pyclean() {
+    find $HOME/devel -name "*py[co]" -delete -print
+}
+
 export DJANGO_SETTINGS_MODULE=pulp.server.webservices.settings
 export CRANE_CONFIG_PATH=$HOME/devel/crane/crane.conf
