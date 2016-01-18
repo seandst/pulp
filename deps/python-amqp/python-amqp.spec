@@ -11,8 +11,8 @@
 %global srcname amqp
 
 Name:           python-%{srcname}
-Version:        1.4.7
-Release:        1%{?dist}
+Version:        1.4.8
+Release:        3%{?dist}
 Summary:        Low-level AMQP client for Python (fork of amqplib)
 
 Group:          Development/Languages
@@ -130,11 +130,12 @@ Documentation for python-amqp
 
 
 %changelog
+* Mon Jan 18 2016 Sean Myers <sean.myers@redhat.com> - 1.4.8-3
+- Upgrade python-amqp dep to 1.4.8
+- Remove duplicate changelog entry for 1.4.7-1
+
 * Fri Dec 18 2015 Brian Bouterse <bbouters@redhat.com> 1.4.7-1
 - Upgrade python-amqp dep to 1.4.7 (sean.myers@redhat.com)
-
-* Thu Dec 18 2015 Sean Myers <sean.myers@redhat.com> 1.4.7-1
-- Upgrade python-amqp to 1.4.7 (sean.myers@redhat.com)
 
 * Tue Dec 09 2014 Brian Bouterse 1.4.6-1
 - Upgrade python-amqp to 1.4.6 (bbouters@redhat.com)
